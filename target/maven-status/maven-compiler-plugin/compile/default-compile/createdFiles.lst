@@ -1,0 +1,12 @@
+com\mx\marketplace\care\profiles\security\CustomUserDetailsService.class
+com\mx\marketplace\care\profiles\util\JwtUtil.class
+com\mx\marketplace\care\profiles\controller\MainController.class
+com\mx\marketplace\care\profiles\dto\AuthResponseDTO.class
+com\mx\marketplace\care\profiles\ProfilesApplication.class
+com\mx\marketplace\care\profiles\repository\UserRepository.class
+com\mx\marketplace\care\profiles\config\SecurityConfig.class
+com\mx\marketplace\care\profiles\security\CustomUserDetails.class
+com\mx\marketplace\care\profiles\security\JwtAuthenticationFilter.class
+com\mx\marketplace\care\profiles\dto\AuthRequestDTO.class
+com\mx\marketplace\care\profiles\model\entity\User.class
+com\mx\marketplace\care\profiles\controller\AuthenticationController.class

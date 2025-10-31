@@ -1,0 +1,12 @@
+C:\Users\Arthur\Documents\forintec-projects\UNI\profiles\src\main\java\com\mx\marketplace\care\profiles\config\SecurityConfig.java
+C:\Users\Arthur\Documents\forintec-projects\UNI\profiles\src\main\java\com\mx\marketplace\care\profiles\controller\AuthenticationController.java
+C:\Users\Arthur\Documents\forintec-projects\UNI\profiles\src\main\java\com\mx\marketplace\care\profiles\controller\MainController.java
+C:\Users\Arthur\Documents\forintec-projects\UNI\profiles\src\main\java\com\mx\marketplace\care\profiles\dto\AuthRequestDTO.java
+C:\Users\Arthur\Documents\forintec-projects\UNI\profiles\src\main\java\com\mx\marketplace\care\profiles\dto\AuthResponseDTO.java
+C:\Users\Arthur\Documents\forintec-projects\UNI\profiles\src\main\java\com\mx\marketplace\care\profiles\model\entity\User.java
+C:\Users\Arthur\Documents\forintec-projects\UNI\profiles\src\main\java\com\mx\marketplace\care\profiles\ProfilesApplication.java
+C:\Users\Arthur\Documents\forintec-projects\UNI\profiles\src\main\java\com\mx\marketplace\care\profiles\repository\UserRepository.java
+C:\Users\Arthur\Documents\forintec-projects\UNI\profiles\src\main\java\com\mx\marketplace\care\profiles\security\CustomUserDetails.java
+C:\Users\Arthur\Documents\forintec-projects\UNI\profiles\src\main\java\com\mx\marketplace\care\profiles\security\CustomUserDetailsService.java
+C:\Users\Arthur\Documents\forintec-projects\UNI\profiles\src\main\java\com\mx\marketplace\care\profiles\security\JwtAuthenticationFilter.java
+C:\Users\Arthur\Documents\forintec-projects\UNI\profiles\src\main\java\com\mx\marketplace\care\profiles\util\JwtUtil.java
