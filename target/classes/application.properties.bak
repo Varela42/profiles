@@ -1,0 +1,18 @@
+﻿# --- Configuración de la base de datos PostgreSQL ---
+spring.datasource.url=jdbc:postgresql://dpg-d3kjsuu3jp1c73b9fopg-a.oregon-postgres.render.com/universidad_71lo
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.username=universidad_71lo_user
+spring.datasource.password=RisvrcMxqYWy41I23PGOV1YSTsZSKI41
+
+# --- Configuración JPA / Hibernate ---
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.defer-datasource-initialization=true
+
+# --- Desactivar consola H2 ---
+spring.h2.console.enabled=false
+
+# --- Configuración JWT ---
+jwt.secret=vgC0t7uU07e3vHnwlO12+byR8k9v7xH3K1oytKX4+gEz4d0qLqu+yyG7S7GUMFgC
+jwt.expiration-ms=86400000
+# 24 * 60 * 60 * 1000 = 24 horas
