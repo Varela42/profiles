@@ -27,36 +27,37 @@ public class UserCarreraController {
         this.carreraRepository = carreraRepository;
     }
 
-    // 🔹 CREAR RELACIÓN USER-CARRERA
+    // 🔹 Crear relación User–Carrera
     @PostMapping
     public UserCarrera create(@RequestParam Long userId, @RequestParam Long carreraId) {
+
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
 
         Carrera carrera = carreraRepository.findById(carreraId)
                 .orElseThrow(() -> new RuntimeException("Carrera no encontrada"));
 
-        UserCarrera uc = new UserCarrera();
-        uc.setUser(user);
-        uc.setCarrera(carrera);
+        UserCarrera userCarrera = new UserCarrera();
+        userCarrera.setUser(user);
+        userCarrera.setCarrera(carrera);
 
-        return userCarreraRepository.save(uc);
+        return userCarreraRepository.save(userCarrera);
     }
 
-    // 🔹 OBTENER TODAS LAS RELACIONES
+    // 🔹 Listar todas las relaciones
     @GetMapping
     public List<UserCarrera> getAll() {
         return userCarreraRepository.findAll();
     }
 
-    // 🔹 OBTENER UNA RELACIÓN POR ID
+    // 🔹 Buscar por ID
     @GetMapping("/{id}")
     public UserCarrera getById(@PathVariable Long id) {
         return userCarreraRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Relación no encontrada"));
     }
 
-    // 🔹 ACTUALIZAR RELACIÓN
+    // 🔹 Actualizar relación
     @PutMapping("/{id}")
     public UserCarrera update(@PathVariable Long id,
                               @RequestParam Long userId,
@@ -77,7 +78,7 @@ public class UserCarreraController {
                 .orElseThrow(() -> new RuntimeException("Relación no encontrada"));
     }
 
-    // 🔹 ELIMINAR RELACIÓN
+    // 🔹 Eliminar relación
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id) {
         userCarreraRepository.deleteById(id);
