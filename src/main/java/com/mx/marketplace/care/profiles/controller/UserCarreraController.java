@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/user-carrera")
+@RequestMapping("/api/public/user-carrera")
 public class UserCarreraController {
 
     private final UserCarreraRepository userCarreraRepository;
