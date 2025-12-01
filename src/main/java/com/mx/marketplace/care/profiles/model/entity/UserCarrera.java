@@ -24,4 +24,3 @@ public class UserCarrera {
     @JoinColumn(name = "id_carrera", nullable = false)
     private Carrera carrera;
 }
-
