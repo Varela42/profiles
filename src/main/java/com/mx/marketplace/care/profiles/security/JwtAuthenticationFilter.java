@@ -28,6 +28,15 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
                                     FilterChain filterChain) throws IOException, jakarta.servlet.ServletException {
+
+        // ✅ EXTRA — ignorar rutas públicas (mínimo posible)
+        String uri = request.getRequestURI();
+        if (uri.startsWith("/api/public/") || uri.startsWith("/h2-console/")) {
+            filterChain.doFilter(request, response);
+            return;
+        }
+        // ✅ FIN DEL EXTRA
+
         final String authHeader = request.getHeader("Authorization");
         String username = null;
         String token = null;
